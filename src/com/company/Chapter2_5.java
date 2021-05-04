@@ -22,6 +22,10 @@ public class Chapter2_5 {
     public static void main(String[] args) {
         System.out.println(MyMath.combine2And3(MyMath::add));
         System.out.println(MyMath.combine2And3(MyMath::substract));
+
+        // Lambda Syntax
+
+        System.out.println(MyMath.combine2And3((x,y) -> 2 * x + 2 * y));
     }
 
 }

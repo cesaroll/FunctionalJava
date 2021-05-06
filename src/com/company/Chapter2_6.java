@@ -1,18 +1,17 @@
 package com.company;
 
-import java.util.Arrays;
 import java.util.function.Consumer;
 
 public class Chapter2_6 {
 
     public static void main(String[] args) {
-        Function<Function<String>> createPrinter = () -> {
+        FunctionNoArgs<FunctionNoArgs<String>> createPrinter = () -> {
             return () -> "Printer Created";
         };
 
-        Function<Function<String>> createGreeter = () -> () -> "Hello functional";
+        FunctionNoArgs<FunctionNoArgs<String>> createGreeter = () -> () -> "Hello functional";
 
-        Function<String> greeter = createGreeter.apply();
+        FunctionNoArgs<String> greeter = createGreeter.apply();
 
         System.out.println(greeter.apply());
 

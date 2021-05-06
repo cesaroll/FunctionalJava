@@ -1,6 +1,6 @@
 package com.company;
 
 @FunctionalInterface
-public interface Function<T> {
+public interface FunctionNoArgs<T> {
     T apply();
 }

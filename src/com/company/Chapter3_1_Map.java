@@ -3,7 +3,7 @@ package com.company;
 import java.util.Arrays;
 import java.util.stream.Collectors;
 
-public class Chapter3_1 {
+public class Chapter3_1_Map {
     public static void main(String[] args) {
         var list = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
 
